@@ -1,0 +1,108 @@
+ext {
+    // Kotlin
+    kotlinXVersion = "1.3.8"
+    kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    kotlinXCoroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinXVersion"
+
+    // AndroidX
+    androidXVersion1_0_0 = "1.0.0"
+    androidXVersion1_0_0_alpha03 = "1.0.0-alpha03"
+    androidXVersion1_1_0 = "1.1.0"
+    androidXVersion1_2_0 = "1.2.0"
+    androidXVersion1_3_0 = "1.3.0"
+    androidXVersion1_5_0 = "1.5.0"
+    androidXVersion2_0_1 = "2.0.1"
+    androidXVersion2_0_4 = "2.0.4"
+    androidXVersion2_2_0 = "2.2.0"
+    androidXVersion2_2_5 = "2.2.5"
+    androidXDependencies = [
+            activityKTX             : "androidx.activity:activity-ktx:$androidXVersion1_2_0",
+            annotation              : "androidx.appcompat:appcompat:$androidXVersion1_1_0",
+            appCompat               : "androidx.appcompat:appcompat:$androidXVersion1_3_0",
+            coreKTX                 : "androidx.core:core-ktx:$androidXVersion1_5_0",
+            constraintLayout        : "androidx.constraintlayout:constraintlayout:$androidXVersion2_0_4",
+            hiltCompiler            : "androidx.hilt:hilt-compiler:$androidXVersion1_0_0_alpha03",
+            hiltLifecycleViewModel  : "androidx.hilt:hilt-lifecycle-viewmodel:$androidXVersion1_0_0_alpha03",
+            lifecycleExtension      : "androidx.lifecycle:lifecycle-extensions:$androidXVersion2_2_0",
+            lifecycleLiveDataKTX    : "androidx.lifecycle:lifecycle-livedata-ktx:$androidXVersion2_2_0",
+            lifecycleRuntimeKTX     : "androidx.lifecycle:lifecycle-runtime-ktx:$androidXVersion2_2_0",
+            lifecycleViewModelKTX   : "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidXVersion2_2_0",
+            recyclerView            : "androidx.recyclerview:recyclerview:$androidXVersion1_1_0",
+            roomCompiler            : "androidx.room:room-compiler:$androidXVersion2_2_5",
+            roomKTX                 : "androidx.room:room-ktx:$androidXVersion2_2_5",
+            roomRuntime             : "androidx.room:room-runtime:$androidXVersion2_2_5",
+            roomRxJava2             : "androidx.room:room-rxjava2:$androidXVersion2_2_5",
+            sqlite                  : "androidx.sqlite:sqlite:$androidXVersion2_0_1"
+    ]
+
+    // Google
+    googleVersion1_3_0 = "1.3.0"
+    googleDependencies = [
+            material                : "com.google.android.material:material:$googleVersion1_3_0"
+    ]
+
+    // Timber
+    timberVersion = "4.7.1"
+    timberDependency = "com.jakewharton.timber:timber:$timberVersion"
+
+    // Retrofit
+    retrofitVersion = "2.9.0"
+    retrofitDependencies = [
+            adapterRxJava2          : "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion",
+            retrofit                : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            converterGson           : "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            converterMoshi          : "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+    ]
+
+    // OkHttp
+    okHttpLoggingInterceptorVersion = "4.8.1"
+    okHttpLoggingInterceptorDependency = "com.squareup.okhttp3:logging-interceptor:$okHttpLoggingInterceptorVersion"
+
+    // Moshi
+    moshiVersion = "1.9.3"
+    moshiDependencies = [
+            moshiKotlin              : "com.squareup.moshi:moshi-kotlin:$moshiVersion",
+            moshiKotlinCodeGen       : "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
+    ]
+
+    // Hilt
+    hiltDependencies = [
+            hiltAndroid              : "com.google.dagger:hilt-android:$hilt_version",
+            hiltAndroidCompiler      : "com.google.dagger:hilt-android-compiler:$hilt_version",
+    ]
+
+    // Firebase
+    firebaseVersion = "25.12.0"
+    firebaseDependencies = [
+            bom                      : "com.google.firebase:firebase-bom:$firebaseVersion",
+            analyticsKTX             : "com.google.firebase:firebase-analytics-ktx",
+            crashlyticsKTX           : "com.google.firebase:firebase-crashlytics-ktx",
+            config                   : "com.google.firebase:firebase-config",
+    ]
+
+    // Glide
+    glideVersion = "4.11.0"
+    glideDependencies = [
+            glide                    : "com.github.bumptech.glide:glide:$glideVersion",
+            glideCompiler            : "com.github.bumptech.glide:compiler:$glideVersion"
+    ]
+
+    // OKHttp Profiler
+    okHttpProfilerVersion = "1.0.7"
+    okHttpProfilerDependency = "com.itkacher.okhttpprofiler:okhttpprofiler:$okHttpProfilerVersion"
+
+    // AndroidX Test
+    androidXTestVersion1_1_2 = "1.1.2"
+    androidXTestVersion1_3_0 = "1.3.0"
+    androidXTestVersion3_3_0 = "3.3.0"
+    androidXTestDependencies = [
+            espresso                 : "androidx.test.espresso:espresso-core:$androidXTestVersion3_3_0",
+            jUnitExt                 : "androidx.test.ext:junit:$androidXTestVersion1_1_2",
+            rules                    : "androidx.test:rules:$androidXTestVersion1_3_0",
+            runner                   : "androidx.test:runner:$androidXTestVersion1_3_0"
+    ]
+
+    // JUnit
+    jUnitVersion = "4.+"
+    jUnitDependency = "junit:junit:$jUnitVersion"
+}
