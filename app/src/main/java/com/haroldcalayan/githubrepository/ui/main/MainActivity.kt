@@ -1,7 +1,8 @@
-package com.haroldcalayan.githubrepository
+package com.haroldcalayan.githubrepository.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.haroldcalayan.githubrepository.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
