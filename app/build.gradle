@@ -25,6 +25,7 @@ android {
         targetSdkVersion configs.targetSdkVersion
         versionCode configs.versionCode
         versionName configs.versionName
+        buildConfigField "String", "DATABASE_NAME", DATABASE_NAME
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -44,6 +45,14 @@ android {
             minifyEnabled false
             zipAlignEnabled false
             manifestPlaceholders = [enableCrashReporting: "false"]
+            buildConfigField "String", "BASE_APP_URL", DEV_BASE_APP_URL
+        }
+        staging {
+            debuggable true
+            minifyEnabled false
+            zipAlignEnabled false
+            manifestPlaceholders = [enableCrashReporting: "true"]
+            buildConfigField "String", "BASE_APP_URL", STAGE_BASE_APP_URL
         }
         release {
             debuggable false
@@ -52,6 +61,7 @@ android {
             signingConfig signingConfigs.release
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             manifestPlaceholders = [enableCrashReporting: "true"]
+            buildConfigField "String", "BASE_APP_URL", PROD_BASE_APP_URL
         }
     }
 
@@ -86,7 +96,6 @@ dependencies {
     implementation androidXDependencies.appCompat
     implementation androidXDependencies.constraintLayout
     implementation androidXDependencies.coreKTX
-    implementation androidXDependencies.hiltLifecycleViewModel
     implementation androidXDependencies.lifecycleExtension
     implementation androidXDependencies.lifecycleLiveDataKTX
     implementation androidXDependencies.lifecycleRuntimeKTX
@@ -96,7 +105,6 @@ dependencies {
     implementation androidXDependencies.roomRuntime
     implementation androidXDependencies.roomRxJava2
     implementation androidXDependencies.sqlite
-    kapt androidXDependencies.hiltCompiler
     kapt androidXDependencies.roomCompiler
 
     // Google
@@ -124,6 +132,10 @@ dependencies {
 
     // Timber
     implementation timberDependency
+
+    // Glide
+    implementation glideDependencies.glide
+    kapt glideDependencies.glideCompiler
 
     // Firebase
     implementation platform(firebaseDependencies.bom)
