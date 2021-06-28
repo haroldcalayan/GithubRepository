@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">GithubRepository</string>
+    <string name="app_name">Github Repository</string>
+
+    <!--  Messages  -->
+    <string name="message_generic_error">Please try again later</string>
+    <string name="message_app_requires_permission">I\'m sorry. This app requires all permissions to be granted</string>
+    <string name="message_keyword_must_not_empty">Keyword must not be empty</string>
+    <string name="message_keyword_is_invalid">Keyword is invalid</string>
+    <string name="message_repository_url_is_empty">Repository url is empty</string>
+
+    <!--  Main  -->
+    <string name="main_hint_enter_keyword">Enter your keyword here</string>
+
+    <!--  Repository  -->
+    <string name="repository_important_info">ID: %1$d\nOwner: %2$s</string>
+    <string name="repository_more_info">Description: %1$s\nHTML Url: %2$s\nForks: %3$d\nWatchers: %4$d\nOpen Issues: %5$d\nCreated At: %6$s\nUpdated At: %6$s</string>
+
 </resources>
