@@ -6,7 +6,6 @@ ext {
 
     // AndroidX
     androidXVersion1_0_0 = "1.0.0"
-    androidXVersion1_0_0_alpha03 = "1.0.0-alpha03"
     androidXVersion1_1_0 = "1.1.0"
     androidXVersion1_2_0 = "1.2.0"
     androidXVersion1_3_0 = "1.3.0"
@@ -21,8 +20,6 @@ ext {
             appCompat               : "androidx.appcompat:appcompat:$androidXVersion1_3_0",
             coreKTX                 : "androidx.core:core-ktx:$androidXVersion1_5_0",
             constraintLayout        : "androidx.constraintlayout:constraintlayout:$androidXVersion2_0_4",
-            hiltCompiler            : "androidx.hilt:hilt-compiler:$androidXVersion1_0_0_alpha03",
-            hiltLifecycleViewModel  : "androidx.hilt:hilt-lifecycle-viewmodel:$androidXVersion1_0_0_alpha03",
             lifecycleExtension      : "androidx.lifecycle:lifecycle-extensions:$androidXVersion2_2_0",
             lifecycleLiveDataKTX    : "androidx.lifecycle:lifecycle-livedata-ktx:$androidXVersion2_2_0",
             lifecycleRuntimeKTX     : "androidx.lifecycle:lifecycle-runtime-ktx:$androidXVersion2_2_0",
